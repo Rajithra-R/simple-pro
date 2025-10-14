@@ -1,3 +1,4 @@
+# modified-by-module3
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -12,6 +13,8 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
+    if b == 0: # modified
+        return "Cannot divide by zero!" # modified
     return a / b
 
 @app.route("/", methods=["GET", "POST"])
