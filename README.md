@@ -1,3 +1,4 @@
+# modified-by-module3
 # AI-Powered GitHub Issue Resolver
 
 This project is an autonomous AI agent designed to:
@@ -14,6 +15,7 @@ This project is an autonomous AI agent designed to:
 - 🛠 Code analysis using static and semantic tools
 - 🧪 Auto-generated tests and test execution
 - 🤖 Auto PR creation via GitHub API
+- 🤖 Power calculation via math.js # modified
 
 ## Tech Stack
 
