@@ -1,3 +1,4 @@
+# modified-by-module3
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -13,6 +14,13 @@ def multiply(a, b):
 
 def divide(a, b):
     return a / b
+
+def power(a, b): # modified
+    if b == 0: # modified
+        return 1 # modified
+    if a == 0: # modified
+        return 0 # modified
+    return a * power(a, b - 1) # modified
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -32,6 +40,8 @@ def index():
                 result = multiply(num1, num2)
             elif operation == "divide":
                 result = divide(num1, num2)
+            elif operation == "power": # modified
+                result = power(num1, num2) # modified
         except ValueError:
             error = "Please enter valid numbers."
 

@@ -1,3 +1,4 @@
+/* modified-by-module3 */
 /* General layout */
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
@@ -81,3 +82,14 @@ button:hover {
   font-weight: 700;
   margin-top: 8px;
 }
+
+/* Power calculation */ /* modified */
+.power { /* modified */
+  background: #ff69b4; /* Pink color */ /* modified */
+  color: white; /* modified */
+} /* modified */
+
+button[name="operation"]:nth-child(5) { /* modified */
+  background: #ff69b4; /* Pink color */ /* modified */
+  color: white; /* modified */
+} /* modified */
